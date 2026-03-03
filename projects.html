@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · David LaSota</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-header {
+      padding: 6rem 4rem 4rem;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+    }
+    .how-to-add {
+      background: rgba(201, 168, 76, 0.04);
+      border: 1px solid rgba(201, 168, 76, 0.12);
+      padding: 2rem 4rem;
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      line-height: 2;
+    }
+    .how-to-add strong { color: var(--gold); }
+    .placeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(201, 168, 76, 0.1);
+    }
+    .placeholder-card {
+      padding: 3rem;
+      border-right: 1px solid rgba(201, 168, 76, 0.1);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .placeholder-card:nth-child(3n) { border-right: none; }
+    .placeholder-icon {
+      font-family: var(--ff-serif);
+      font-size: 2.5rem;
+      color: rgba(201, 168, 76, 0.15);
+      margin-bottom: 1rem;
+    }
+    .placeholder-label {
+      font-family: var(--ff-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(138, 155, 176, 0.3);
+    }
+    @media (max-width: 900px) {
+      .placeholder-grid { grid-template-columns: 1fr; }
+      .placeholder-card { border-right: none; }
+      .projects-header { padding: 4rem 1.5rem 2rem; }
+      .how-to-add { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">DL</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="documents.html">Documents</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-header">
+    <p class="page-eyebrow">Work Samples &amp; Analysis</p>
+    <h1 class="page-title">Projects</h1>
+  </section>
+
+  <!-- How-to guide for adding projects -->
+  <div class="how-to-add">
+    <strong>// HOW TO ADD A PROJECT</strong><br>
+    To add a project, open <strong>projects.html</strong> and duplicate one of the placeholder cards below.<br>
+    Replace the placeholder content with: <strong>title</strong>, <strong>description</strong>, <strong>tags</strong>, and optionally a <strong>link</strong> to the project file or GitHub repo.<br>
+    Upload project files (PDFs, Excel workbooks, etc.) to a <strong>/projects/</strong> folder in the repository and link them from the card.
+  </div>
+
+  <!-- Project cards — add your projects by replacing these placeholders -->
+  <div class="placeholder-grid">
+
+    <!--
+      PROJECT CARD TEMPLATE — copy and paste this block to add a project:
+
+      <div class="placeholder-card" style="align-items:flex-start; text-align:left;">
+        <div class="project-card-num">01</div>
+        <div class="project-card-title">Project Title Here</div>
+        <div class="project-card-desc">A brief description of the project, what it demonstrates, and the tools used.</div>
+        <div class="project-card-tags">
+          <span class="project-tag">Excel</span>
+          <span class="project-tag">Power BI</span>
+        </div>
+        <a href="projects/your-file.xlsx" class="project-card-link">View Project →</a>
+      </div>
+    -->
+
+    <div class="placeholder-card">
+      <div class="placeholder-icon">◈</div>
+      <div class="placeholder-label">Project Slot 01</div>
+    </div>
+
+    <div class="placeholder-card">
+      <div class="placeholder-icon">◈</div>
+      <div class="placeholder-label">Project Slot 02</div>
+    </div>
+
+    <div class="placeholder-card">
+      <div class="placeholder-icon">◈</div>
+      <div class="placeholder-label">Project Slot 03</div>
+    </div>
+
+    <div class="placeholder-card">
+      <div class="placeholder-icon">◈</div>
+      <div class="placeholder-label">Project Slot 04</div>
+    </div>
+
+    <div class="placeholder-card">
+      <div class="placeholder-icon">◈</div>
+      <div class="placeholder-label">Project Slot 05</div>
+    </div>
+
+    <div class="placeholder-card">
+      <div class="placeholder-icon">◈</div>
+      <div class="placeholder-label">Project Slot 06</div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 David LaSota</span>
+    <span>Chicago, IL · (331) 625-9973</span>
+    <a href="mailto:djlasota2@gmail.com">djlasota2@gmail.com</a>
+  </footer>
+
+</body>
+</html>
